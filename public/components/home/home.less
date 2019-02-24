@@ -1,0 +1,230 @@
+.home_page {
+
+  background-image: url(./home_bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .home_content {
+
+    max-width: 1200px;
+    margin: auto;
+    text-align: left;
+    padding: 30px;
+    box-sizing: border-box;
+
+
+  }
+
+  .title {
+
+    font-family: "Helvetica Neue Roman", sans-serif;
+    color: #b98300;
+    margin-top: 3em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.8em;
+
+  }
+
+  .subtitle {
+
+    font-family: "Helvetica Neue Ultralight", sans-serif;
+    color: #49b1a0;
+    font-style: italic;
+    margin-top: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin-bottom: 0.4em;
+
+  }
+
+  .title {
+
+    font-family: "Helvetica Neue", sans-serif;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 0.4em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 35px;
+    margin-bottom: 0.5em;
+
+  }
+
+  .home_items {
+
+    text-align: left;
+    margin-top: 3em;
+
+    .nav_item {
+
+      padding-left: 20px;
+      position: relative;
+      font-size:0.9em;
+      line-height: 100%;
+      font-family: "Helvetica Neue Ultralight", sans-serif;
+      color: #fff;
+      margin-right: 40px;
+      display: inline-block;
+      margin-bottom: 0.5em;
+
+      &:last-child {
+
+        margin-right: 0;
+
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: -0.1em;
+        width: 0.8em;
+        height: 0.8em;
+        background-image: url(./block.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+
+      }
+
+    }
+
+  }
+
+  .home_footer {
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 1200px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2em;
+    box-sizing: border-box;
+
+    .partners {
+
+      float: left;
+
+      .partners_title {
+
+        font-family: "Helvetica Neue", sans-serif;
+        text-align: left;
+        color: #7c7c7c;
+        font-weight: bold;
+        font-size: 0.9em;
+        letter-spacing: 1px;
+        margin-bottom: 0.5em;
+
+      }
+
+      img {
+
+        display: inline-block;
+        margin-right: 1.5em;
+        height: 2em;
+
+      }
+
+    }
+
+    .messages {
+
+      float: right;
+      text-align: right;
+
+      a {
+        vertical-align: top;
+      }
+
+      .or {
+
+        color: #fff;
+        vertical-align: top;
+        font-family: "Helvetica Neue Ultralight", sans-serif;
+        font-size: 0.8em;
+        padding: 0.8em 1.5em;
+        display: inline-block;
+
+      }
+
+      .instagram_icon {
+
+        display: inline-block;
+        margin-right: 1.5em;
+        img {
+          height: 2.2em;
+        }
+
+      }
+
+      .whatsapp_btn {
+
+        display: inline-block;
+        border: 2px solid #49b1a0;
+        color: #49b1a0;
+        font-size: 0.8em;
+        padding: 0.7em 1.5em;
+        font-family: "Helvetica Neue Ultralight", sans-serif;
+        font-weight: bold;
+        text-decoration: none;
+        line-height: 1em;
+
+      }
+
+      .call_form {
+
+        display: inline-block;
+
+        input[type=text] {
+
+          display: inline-block;
+          border: 2px solid #49b1a0;
+          color: #fff;
+          font-size: 0.8em;
+          padding: 0.7em 1em;
+          font-family: "Helvetica Neue Ultralight", sans-serif;
+          font-weight: bold;
+          text-decoration: none;
+          line-height: 1em;
+          background-color: transparent;
+          outline: none;
+          min-width: 110px;
+          margin-right: 20px;
+
+        }
+
+        button[type=submit] {
+
+          display: inline-block;
+          background-color: #49b1a0;
+          color: #000;
+          font-size: 0.6em;
+          padding: 1.1em 2.5em;
+          font-family: "Helvetica Neue Roman", sans-serif;
+          font-weight: bold;
+          text-decoration: none;
+          line-height: 1em;
+          outline: none;
+          cursor: pointer;
+          border: 2px solid #49b1a0;
+          text-transform: uppercase;
+
+          &:hover {
+
+            background-color: darken(#49b1a0, 10%);
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}

@@ -3,102 +3,273 @@
 <head>
   <meta charset="UTF-8">
 
-  <title>BONO - Professional Auto Tuning</title>
+  <title>BOND - Professional Auto Tuning</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="icon" type="image/png" href="./public/img/favicon.png">
 
   <link rel="stylesheet/less" type="text/css" href="./public/styles/layout.less">
+  <script src="./public/js/layout.js"></script>
+
+  <link rel="stylesheet/less" type="text/css" href="./public/components/header/header.less">
+  <link rel="stylesheet/less" type="text/css" href="./public/components/home/home.less">
+  <link rel="stylesheet/less" type="text/css" href="./public/components/gallery/gallery.less">
+  <link rel="stylesheet/less" type="text/css" href="./public/components/contacts/contacts.less">
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>
+
+
+  <!-- import fullpage scroller -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/vendors/jquery.easings.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.js" type="text/javascript"></script>
 
 </head>
 <body>
 
-  <div class="bg"></div>
+  <div class="header">
 
-  <div class="content">
+    <div class="header_inner clearfix">
 
-    <div class="header clearfix">
+      <a href="/" class="header_logo">
 
-      <a href="/" class="logo_main">
-        <img src="./public/img/logo.png" alt="BONO">
+        <img src="./public/components/header/logo.png" alt="BOND">
+
       </a>
 
+      <ul class="header_nav navigation_main" id="header_nav">
+        <li data-menuanchor="home" class="active"><a href="#home">Главная</a></li>
+        <li data-menuanchor="gallery"><a href="#gallery">Галерея</a></li>
+        <!--<li data-menuanchor="service"><a href="#service">Автосервис</a></li>-->
+        <!--<li data-menuanchor="tuning"><a href="#tuning">Тюнинг</a></li>-->
+        <li data-menuanchor="contacts"><a href="#contacts">Контакты</a></li>
+      </ul>
 
-      <div class="contacts">
-
-        <div class="no_wrap">
+      <ul class="header_contacts">
+        <li class="no_wrap">
           <span class="city">МОСКВА</span>&nbsp;<span class="phone">8 (999) 932-84-89</span>
-        </div>
-        <div class="no_wrap">
+        </li>
+        <li class="no_wrap">
           <span class="city">СОЧИ</span>&nbsp;<span class="phone">8 (989) 087-81-27</span>
-        </div>
-
-      </div>
-
-    </div>
-
-    <div class="body">
-
-      <h1 class="title">Сайт временно находится в разработке...</h1>
-
-      <div class="menu">
-
-        <h2 class="menu_title">Professional auto tuning</h2>
-        <h3 class="menu_sub_title">Есть задача - преград нет</h3>
-
-      </div>
-
-      <div class="nav">
-
-        <span class="nav_item">Покраска и ремонт</span>
-        <span class="nav_item">Автосервис</span>
-        <span class="nav_item">Тюнинг</span>
-        <span class="nav_item">Детейлинг</span>
-
-      </div>
+        </li>
+      </ul>
 
     </div>
-
 
   </div>
 
-  <div class="footer clearfix">
+  <div id="layout">
 
-    <div class="partners">
+    <!-- first page -->
+    <div class="section home_page" data-anchor="home">
 
-      <div class="partners_title">
+      <div class="home_content">
 
-        Официальные партнеры:
+        <div class="home_titles">
+
+          <h2 class="subtitle">Professional auto tuning</h2>
+          <h3 class="title">«Есть задача - <br> преград нет»</h3>
+
+        </div>
+
+        <div class="home_items">
+
+          <span class="nav_item">Покраска и ремонт</span> <br>
+          <span class="nav_item">Автосервис</span> <br>
+          <span class="nav_item">Тюнинг</span> <br>
+          <span class="nav_item">Детейлинг</span>
+
+        </div>
 
       </div>
 
-      <div class="partner_logos">
+      <div class="home_footer clearfix">
 
-        <img src="./public/img/logo_alfa.png" alt="alfa">
-        <img src="./public/img/logo_gelarus.png" alt="alfa">
+        <div class="partners">
+
+          <div class="partners_title">
+
+            Официальные партнеры:
+
+          </div>
+
+          <div class="partner_logos">
+
+            <img src="./public/img/logo_alfa.png" alt="alfa">
+            <img src="./public/img/logo_gelarus.png" alt="alfa">
+
+          </div>
+
+        </div>
+
+        <div class="messages">
+
+          <a href="https://instagram.com" class="instagram_icon">
+            <img src="./public/img/instagram.png" alt="instagram">
+          </a>
+
+          <a href="https://whatsapp.com" class="whatsapp_btn">
+
+            Написать в whatsapp
+
+          </a>
+
+          <span class="or">или</span>
+
+          <form action="/call" class="call_form">
+
+            <input type="text" placeholder="+7 (999) 999-99-99">
+
+            <button type="submit">Перезвоните</button>
+
+          </form>
+
+
+        </div>
+
+
+      </div>
+
+    </div>
+    <!-- /////////// -->
+
+    <!-- second page -->
+    <div class="section gallery_page" data-anchor="gallery">
+
+      <div class="gallery_logo">
+
+        <img src="./public/components/gallery/logoBig.png" alt="BOND">
+
+      </div>
+      
+      <div class="gallery_list clearfix">
+
+        <img src="./public/components/gallery/slides/galery1.png" alt="1">
+        <img src="./public/components/gallery/slides/galery2.png" alt="2">
+        <img src="./public/components/gallery/slides/galery3.png" alt="3">
+        <img src="./public/components/gallery/slides/galery4.png" alt="4">
+        <img src="./public/components/gallery/slides/galery5.png" alt="5">
+        <img src="./public/components/gallery/slides/galery6.png" alt="6">
+        <img src="./public/components/gallery/slides/galery7.png" alt="7">
+        <img src="./public/components/gallery/slides/galery8.png" alt="8">
 
       </div>
 
     </div>
 
-    <div class="messages">
+    <!-- contacts page -->
+    <div class="section contacts_page" data-anchor="contacts">
 
-      <a href="https://instagram.com" class="instagram_icon">
-        <img src="./public/img/instagram.png" alt="instagram">
-      </a>
+      <div class="contacts_content clearfix">
 
-      <a href="https://whatsapp.com" class="whatsapp_btn">
+        <div class="content_left">
 
-        Написать в whatsapp
+          <div class="title">
 
-      </a>
+            <span class="title_decorated">КОН</span>ТАКТЫ
 
+          </div>
+
+          <div class="address">
+
+            <h4>Москва</h4>
+
+            <div>
+              <a class="address_decorated" target="_blank" href="https://yandex.ru/maps/-/CCQDZLME">
+              ул. Измайловского зверинца 1-ая, 8
+              </a>
+            </div>
+
+            <div class="address_department" style="margin-top: 10px;">
+              <a href="tel:79262666616" class="address_phone">+7 (926) 266-66-16</a>
+            </div>
+
+          </div>
+
+          <div class="address">
+
+            <h4>Сочи</h4>
+
+            <div>
+              <a class="address_decorated" target="_blank" href="https://yandex.ru/maps/-/CCQDZ8O8">
+                ул. Водораздельная, 5/1
+              </a>
+            </div>
+
+
+            <div class="address_department">
+              <h5>Страхование и прием убытков</h5>
+              <a href="tel:78622777523" class="address_phone">+7 (862) 277-75-23</a>
+              <a href="tel:79890878127" class="address_phone">+7 (989) 087-81-27</a>
+            </div>
+
+            <div class="address_department">
+              <h5>Сервис и тюнинг ателье</h5>
+              <a href="tel:78622777024" class="address_phone">+7 (862) 277-70-24</a>
+              <a href="tel:79099069006" class="address_phone">+7 (909) 906-90-06</a>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="content_right">
+
+          <div class="socials">
+
+            <a class="social instagram" target="_blank" href="https://instagram.com">@bondmotors.ru</a>
+            <a class="social email" target="_blank" href="mailto:info@bondmotors.ru">info@bondmotors.ru</a>
+
+          </div>
+
+          <div class="feedback_form">
+
+            <form action="/feedback">
+
+              <h3>Обратная связь</h3>
+
+              <input type="text" placeholder="ВАШЕ ИМЯ">
+
+              <input type="text" placeholder="ВАШ EMAIL">
+
+              <textarea rows="1" style="margin-top: 60px;" placeholder="ВАШЕ СООБЩЕНИЕ"></textarea>
+
+              <button type="submit">Отправить сообщение</button>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="footer">
+
+        <div class="footer_inner clearfix">
+
+          <a href="/" class="footer_logo">
+
+            <img src="./public/components/contacts/logo.png" alt="BOND">
+
+          </a>
+
+          <ul class="footer_nav">
+            <li data-menuanchor="home"><a href="#home">Главная</a></li>
+            <li data-menuanchor="gallery"><a href="#gallery">Галерея</a></li>
+            <!--<li data-menuanchor="service"><a href="#service">Автосервис</a></li>-->
+            <!--<li data-menuanchor="tuning"><a href="#tuning">Тюнинг</a></li>-->
+            <li data-menuanchor="contacts" class="active"><a href="#contacts">Контакты</a></li>
+          </ul>
+
+        </div>
+
+
+      </div>
 
     </div>
-
 
   </div>
 

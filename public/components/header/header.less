@@ -1,0 +1,99 @@
+.header {
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  width: 100%;
+
+  .header_inner {
+
+    padding: 30px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: justify;
+    box-sizing: border-box;
+
+  }
+
+  .header_logo {
+
+    display: inline-block;
+    width: 25%;
+    min-width: 120px;
+
+    img {
+      margin-top: 15px;
+      display: block;
+    }
+
+  }
+
+  .header_nav {
+
+    display: inline-block;
+    list-style: none;
+    padding: 5px 0 0 0;
+    vertical-align: top;
+
+    li {
+
+      display: inline-block;
+      margin-right: 40px;
+      margin-bottom: 10px;
+
+      a {
+
+        text-decoration: none;
+        font-family: "Helvetica Neue Roman", sans-serif;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 14px;
+
+      }
+
+      &.active {
+
+        a {
+
+          border-bottom: 2px solid #49b1a0;
+
+        }
+
+      }
+
+    }
+
+  }
+
+  .header_contacts {
+
+    display: inline-block;
+    text-align: right;
+    list-style: none;
+    padding: 0;
+    float: right;
+
+    .city, .phone {
+
+      font-size: 0.8em;
+      font-family: "Helvetica Neue", sans-serif;
+      font-weight: bold;
+
+    }
+
+    .city {
+
+      color: #49b1a0;
+
+    }
+
+    .phone {
+
+      color: #fff;
+
+    }
+
+  }
+
+}
